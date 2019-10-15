@@ -21,6 +21,7 @@ export class ArticleComponent implements OnInit {
 
   addComment() {
     this.article.commentList.push(this.commentValue);
+    this.commentValue = '';
   }
 
 }
