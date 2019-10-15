@@ -4,9 +4,13 @@
     {{article.title}}
 </h1>
 
-<p>
-    {{article.description}}
-</p>
+
+
+<app-comment-list [comments]="article.commentList" [displaySize]="3" > </app-comment-list>
+
 
 
 <input type="text" [(ngModel)]="commentValue">
+
+
+<button (click)="addComment()" >  envoi  </button>

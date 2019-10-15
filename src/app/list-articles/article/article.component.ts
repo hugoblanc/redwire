@@ -18,4 +18,9 @@ export class ArticleComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  addComment() {
+    this.article.commentList.push(this.commentValue);
+  }
+
 }
