@@ -1,5 +1,5 @@
-<div *ngFor="let currentArticle of articles">
+<div *ngFor="let currentArticle of articles; let i=index">
 
-    <app-article [article]="currentArticle" ></app-article>
+    <app-article [article]="currentArticle" [routerLink]="['/article-details', i]"    ></app-article>
 
 </div>
