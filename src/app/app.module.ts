@@ -8,6 +8,7 @@ import { ArticleComponent } from './list-articles/article/article.component';
 import { ListArticlesComponent } from './list-articles/list-articles.component';
 import { CommentListComponent } from './components/comment-list/comment-list.component';
 import { ArticleDetailsComponent } from './article-details/article-details.component';
+import { CreateArticleComponent } from './list-articles/create-article/create-article.component';
 
 
 
@@ -18,7 +19,8 @@ import { ArticleDetailsComponent } from './article-details/article-details.compo
     ListArticlesComponent,
     ArticleComponent,
     CommentListComponent,
-    ArticleDetailsComponent
+    ArticleDetailsComponent,
+    CreateArticleComponent
   ],
   imports: [
     BrowserModule,

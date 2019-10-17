@@ -1,0 +1,18 @@
+<form (submit)="sendValue()" #myForm="ngForm">
+
+
+    <input type="text" [(ngModel)]="article.title" name="title" #titleRef="ngModel" required minlength="5" >
+
+    <div *ngIf="titleRef?.errors?.required && myForm.submitted" >
+        Le titre est requis 
+    </div>
+
+    <input type="text" [(ngModel)]="article.imageUrl" name="imageUrl" >
+    <input type="text" [(ngModel)]="article.description" name="description" >
+
+    <button> Envoyer l'article</button>
+</form>
+
+<button (click)="voirValeur(titleRef)" >
+    voir valeur     
+</button>
